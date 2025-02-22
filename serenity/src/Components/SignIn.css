@@ -23,13 +23,13 @@
     font-size: 2.5rem;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #fff;
+    color: #ea00ff;
 }
 
 .signin-subtext {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 51, 255, 0.9);
 }
 
 .signin-button {
