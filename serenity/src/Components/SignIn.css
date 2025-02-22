@@ -5,46 +5,59 @@
     align-items: center;
     height: 100vh;
     background: url('https://source.unsplash.com/1600x900/?nature,calm,serenity') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 .glass-card {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(15px);
-    padding: 40px;
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     color: white;
-    max-width: 400px;
+    max-width: 450px;
     animation: fadeIn 1s ease-in-out;
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
 }
 
 .signin-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 20px;
     font-weight: bold;
-    color: #ea00ff;
+    color: #ff00cc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .signin-subtext {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: rgba(0, 51, 255, 0.9);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: rgba(0, 102, 255, 0.9);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .signin-button {
     background-color: #395dff !important;
     color: white !important;
-    padding: 12px 20px !important;
-    font-size: 1rem !important;
-    border-radius: 8px !important;
+    padding: 15px 25px !important;
+    font-size: 1.2rem !important;
+    border-radius: 10px !important;
     text-transform: none !important;
     font-weight: bold !important;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .signin-button:hover {
     background-color: #303f9f !important;
+    transform: translateY(-3px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Fade-in animation */

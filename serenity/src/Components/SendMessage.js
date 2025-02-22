@@ -6,34 +6,40 @@ import { styled } from '@mui/system';
 const MessageContainer = styled(Box)({
     display: 'flex',
     alignItems: 'center',
-    padding: '8px',
+    padding: '12px',
     borderTop: '1px solid #ccc',
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#f5f7fa',
     position: 'fixed',
     bottom: 0,
-    width: '100%',
+    width: '95%',
     left: 0,
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
 });
 
 const StyledInput = styled(Input)({
     flex: 1,
-    marginRight: '8px',
+    marginRight: '12px',
     '& .MuiInputBase-input': {
-        padding: '10px',
-        borderRadius: '4px',
+        padding: '12px',
+        borderRadius: '8px',
         border: '1px solid #ccc',
+        backgroundColor: '#fff',
         '&:focus': {
-            borderColor: '#3f51b5',
+            borderColor: '#6200ea',
             outline: 'none',
         },
     },
 });
 
 const StyledButton = styled(Button)({
-    backgroundColor: '#3f51b5',
+    backgroundColor: '#6200ea',
     color: '#fff',
+    padding: '10px 20px',
+    borderRadius: '8px',
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
     '&:hover': {
-        backgroundColor: '#303f9f',
+        backgroundColor: '#3700b3',
+        boxShadow: '0px 8px 15px rgba(0, 0, 0, 0.3)',
     },
 });
 
@@ -68,7 +74,7 @@ function SendMessage({ auth }) {
                 <StyledInput 
                     value={msg}
                     onChange={(e) => setMsg(e.target.value)} 
-                    placeholder="Message..." 
+                    placeholder="Type your message..." 
                     fullWidth
                 />
                 <StyledButton type="submit">Send</StyledButton>
