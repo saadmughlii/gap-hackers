@@ -10,9 +10,9 @@ function SignOut() {
     };
 
     return (
-        <div>
-            <Button onClick={handleSignOut}>Sign Out</Button>
-        </div>
+        <button className="sign-out-button" onClick={handleSignOut}>
+            Sign Out
+        </button>
     );
 }
 

@@ -1,10 +1,13 @@
 .chat {
   display: flex;
   flex-direction: column;
+  max-width: 750px; /* Increased width as per your preference */
   height: 100vh;
   overflow: hidden;
-  background-color: #ffffff; /* Light background */
+  background-color: #ff4b99; /* Light background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
 }
+
 
 .messages {
   display: flex;
@@ -25,10 +28,9 @@
   padding: 10px 15px; /* Add padding for a comfortable touch */
 }
 
-
 /* Sent messages (current user) on the right */
 .sent {
-  background-color: #0084ff; /* Messenger blue for sent messages */
+  background-color: #a600ff; /* Messenger blue for sent messages */
   color: white;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px; /* Rounded corners */
@@ -58,6 +60,61 @@ p {
   font-size: 18px; /* Adjusted for readability */
   margin: 0;
   overflow-wrap: break-word;
+}
+
+.send-message {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-top: 1px solid #ccc;
+  background-color: #f5f7fa; /* Background for the input area */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.styled-input {
+  flex: 1;
+  margin-right: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.styled-button {
+  background-color: #6200ea;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.styled-button:hover {
+  background-color: #3700b3;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Sign Out Button Styles */
+.sign-out-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  color: #ff4b99;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.sign-out-button:hover {
+  background-color: #ff4b99;
+  color: white;
 }
 
 /* Responsive breakpoints (optional) */
