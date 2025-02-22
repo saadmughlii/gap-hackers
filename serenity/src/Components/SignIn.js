@@ -1,18 +1,22 @@
 import React from 'react';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { auth } from '../firebase.js';
 import { Button } from '@mui/material';
 import './SignIn.css';
 
 function SignIn() {
+    // Initialize the Firebase Auth object
+    const auth = getAuth();
+
     function signInWithGoogle() {
         const provider = new GoogleAuthProvider();
         signInWithPopup(auth, provider)
             .then((result) => {
                 console.log(result.user);
+                // Handle successful login (e.g., store user info, redirect, etc.)
             })
             .catch((error) => {
                 console.error(error);
+                // Handle errors here (e.g., show an error message)
             });
     }
 

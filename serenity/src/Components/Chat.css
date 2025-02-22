@@ -8,6 +8,19 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
 }
 
+.dancing-script {
+  font-family: "Dancing Script", cursive; /* Use the Dancing Script font */
+  font-weight: 400; /* Adjust the weight (400 is normal, 700 is bold) */
+  font-style: normal; /* Set the font style */
+  font-optical-sizing: auto; /* Use optical sizing */
+}
+
+.chat-title {
+  font-size: 2.5rem; /* Adjust the font size */
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Add some space below the title */
+  color: #ffffff; /* Change the color to match your theme */
+}
 
 .messages {
   display: flex;

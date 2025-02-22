@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { db, collection, addDoc, serverTimestamp } from '../firebase.js'; 
-import { Input, Button, Box, Avatar } from '@mui/material';
-import { styled } from '@mui/system';
+import { Avatar } from '@mui/material'; // Only import Avatar as it's used
 
 function SendMessage({ auth }) {
     const [msg, setMsg] = useState('');
@@ -42,6 +41,5 @@ function SendMessage({ auth }) {
         </div>
     );
 }
-
 
 export default SendMessage;

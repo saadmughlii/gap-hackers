@@ -5,7 +5,7 @@
     align-items: center;
     height: 100vh;
     background: url('https://cdn.pixabay.com/photo/2015/04/07/02/24/ocean-710403_960_720.jpg') no-repeat center center/cover;
-    background-color: rgba(0, 0, 0, 0.8); /* Temporary solid background for testing */
+    background-color: rgba(255, 255, 255, 0.8); /* Temporary solid background for testing */
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }

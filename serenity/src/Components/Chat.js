@@ -21,6 +21,7 @@ function Chat() {
 
   return (
     <div className="chat">
+      <h1 className="chat-title dancing-script">Serenity Chat 🌿</h1> {/* Title with Dancing Script font */}
       <SignOut />
       <div className="messages">
         {messages.map((message) => (
