@@ -5,6 +5,7 @@
     align-items: center;
     height: 100vh;
     background: url('https://source.unsplash.com/1600x900/?nature,calm,serenity') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.8); /* Temporary solid background for testing */
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
