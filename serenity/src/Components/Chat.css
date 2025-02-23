@@ -165,6 +165,28 @@ p {
   color: white;
 }
 
+.messages {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #7700ff #ffffff; /* For Firefox */
+}
+
+.messages::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.messages::-webkit-scrollbar-track {
+  background: #ffffff; /* Color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #7700ff; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+  background-color: #5707a3; /* Color of the scrollbar thumb on hover */
+}
 /* Responsive Styling */
 @media (max-width: 775px) {
   p {
