@@ -51,7 +51,7 @@ function Chat() {
       {/* AI Chat Component */}
       <div className="small-box">
   <div className="ai-chat">
-    <h1 className="chat-title-serenity sacramento-regular">Talk with Serenity</h1>
+    <h1 className="chat-title-serenity dancing-script">Talk with Serenity</h1>
     <div className="ai-chat-messages">
       <MessageAI /> {/* Ensure this component properly renders messages */}
     </div>
