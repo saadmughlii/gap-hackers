@@ -7,6 +7,8 @@
   overflow: hidden;
   background-color: #008bb1;
   box-shadow: 0 0 15px rgba(2, 2, 2, 0.2);
+
+
   
   /* Centering */
   position: absolute;
@@ -233,22 +235,6 @@ p {
 /* Small Box Container */
 .small-box {
   position: fixed;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  top: 2%; /* Adjust the vertical position */
-  left: 57%; /* Move it more to the right */
-  width: 600px; /* Increase the width */
-  height: 600px; /* Increase the height */
-  background-color: #00ffae; /* Change the color slightly */
-  border-radius: 10px; /* More rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhance the shadow effect */
-  z-index: 1000; /* Ensure it appears above other elements */
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   top: 2%;
   left: 57%;
   width: 600px;
@@ -259,13 +245,6 @@ p {
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Ensure no overflow */
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
 
 .ai-chat {
@@ -280,25 +259,6 @@ p {
   margin-bottom: 10px; /* Add some space between the title and messages */
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-.talk-ai-button {
-  position: fixed;
-  top: 92.6%; /* Adjusted from 50% to 60% to move the button down */
-<<<<<<< Updated upstream
-  left: 67%;
-=======
-  right: 19%;
->>>>>>> Stashed changes
-  transform: translateY(-50%);
-  padding: 30px 60px;
-  background-color: #9375ff; /* Color, change as needed */
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 /* Centered Messages Container */
 .ai-chat-messages {
   flex: 1; /* Take up available space */
@@ -329,13 +289,6 @@ p {
 
 .sent {
   background-color: #9000ff;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   color: white;
   align-self: flex-end; /* Keep sent messages to the right */
   text-align: right;
