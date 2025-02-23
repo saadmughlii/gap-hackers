@@ -4,68 +4,67 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://cdn.pixabay.com/photo/2015/04/07/02/24/ocean-710403_960_720.jpg') no-repeat center center/cover;
-    background-color: rgba(255, 255, 255, 0.8); /* Temporary solid background for testing */
+    background: url('https://static.vecteezy.com/system/resources/previews/011/421/932/original/holographic-iridescent-gradient-background-neon-abstract-vibrant-illustration-pink-and-blue-rainbow-pastel-wallpaper-vibrant-banner-vector.jpg') no-repeat center center/cover;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
 
 .glass-card {
-    background: rgba(7, 7, 7, 0.1);
-    backdrop-filter: blur(20px);
-    padding: 50px;
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Adjusted background color for glass effect */
+    backdrop-filter: blur(10px); /* Slightly reduced blur for subtlety */
+    padding: 30px; /* Reduced padding for better visual balance */
+    border-radius: 15px; /* Slightly reduced border radius */
     text-align: center;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adjusted box shadow for softer look */
     color: rgb(255, 255, 255);
-    max-width: 450px;
-    animation: fadeIn 1s ease-in-out;
+    max-width: 400px; /* Slightly reduced max-width for better responsiveness */
+    animation: fadeIn 0.8s ease-in-out;
     transition: all 0.3s ease;
 }
 
 .glass-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.03); /* Adjusted hover scale for subtlety */
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3); /* Enhanced hover box shadow */
 }
 
 .signin-title {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem; /* Slightly reduced title font size */
+    margin-bottom: 15px; /* Reduced margin for tighter spacing */
     font-weight: bold;
     color: #ff00cc;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adjusted text shadow */
 }
 
 .signin-subtext {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    color: rgba(0, 102, 255, 0.9);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1.3rem; /* Slightly reduced subtext font size */
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+    color: rgba(0, 102, 255, 0.8); /* Adjusted subtext color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .signin-button {
-    background-color: #395dff !important;
-    color: white !important;
-    padding: 15px 25px !important;
-    font-size: 1.2rem !important;
-    border-radius: 10px !important;
-    text-transform: none !important;
-    font-weight: bold !important;
+    background-color: #395dff;
+    color: white;
+    padding: 12px 20px; /* Reduced padding for better button size */
+    font-size: 1.1rem; /* Slightly reduced button font size */
+    border-radius: 8px; /* Slightly reduced border radius */
+    text-transform: none;
+    font-weight: bold;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .signin-button:hover {
-    background-color: #303f9f !important;
-    transform: translateY(-3px);
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+    background-color: #303f9f;
+    transform: translateY(-2px); /* Adjusted hover transformation */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Enhanced hover box shadow */
 }
 
 /* Fade-in animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-10px); /* Adjusted initial animation position */
     }
     to {
         opacity: 1;
