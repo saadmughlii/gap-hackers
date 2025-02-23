@@ -72,6 +72,7 @@ body::after {
 
 
 .chat-title {
+  position: relative; /* Ensure positioning context for pseudo-elements */
   font-size: 2.8rem;
   text-align: center;
   margin: 0 auto 25px auto; /* Centers the box */
@@ -86,6 +87,23 @@ body::after {
   user-select: none;
 }
 
+.chat-title::before,
+.chat-title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30px; /* Adjust width as needed */
+  height: 3px; /* Adjust height as needed */
+  background-color: #000000; /* Color of the flourishes */
+}
+
+.chat-title::before {
+  left: -40px; /* Adjust distance from the left */
+}
+
+.chat-title::after {
+  right: -40px; /* Adjust distance from the right */
+}
 
 
 /* Messages Container */
@@ -132,7 +150,7 @@ img {
   border-radius: 50%;
   height: 45px;
   margin: 0 12px;
-  border: 2px solid #f8f9fa;
+  border: 2px solid #000000;
   pointer-events: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -351,7 +369,7 @@ p {
   padding: 12px 20px;
   border: none;
   border-radius: 50px;
-  background: #17a2b8;
+  background: #158687;
   color: white;
   cursor: pointer;
 }

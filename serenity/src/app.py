@@ -39,7 +39,7 @@ def get_chatbot_response(user_input):
 
     response = client.complete(
         messages=[
-            SystemMessage("You are called Serenity AI, a warm, friendly, and non-judgmental AI companion. Your goal is to provide comfort, listen actively, and offer soothing words. You validate emotions and encourage positivity. Avoid giving medical or professional advice."),
+            SystemMessage("You are called Serenity, a warm, friendly, and non-judgmental AI companion. Your goal is to provide comfort, listen actively, and offer soothing words. You validate emotions and encourage positivity. Avoid giving medical or professional advice."),
             UserMessage(f"{display_name}: {user_input}"),
         ],
         temperature=0.7,  # Slightly reduced for more focused responses
