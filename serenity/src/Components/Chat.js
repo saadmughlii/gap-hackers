@@ -27,18 +27,23 @@ function Chat() {
 
   return (
     <>
-  <div className="chat">
-    <h1 className="chat-title dancing-script">Serenity Chat 🌿</h1> {/* Title with Dancing Script font */}
-    <SignOut />
-    <div className="messages">
-      {messages.map((message) => (
-        <div
-          key={message.id}
-          className={`msg ${message.uid === auth.currentUser.uid ? 'sent' : 'received'}`}
-        >
-          {message.photoURL && <img src={message.photoURL} alt="User Avatar" />}
-          <p>{message.text}</p> 
+      <div className="chat">
+        <h1 className="chat-title dancing-script">Serenity Chat 🌿</h1> {/* Title with Dancing Script font */}
+        <SignOut />
+        <div className="messages">
+          {messages.map((message) => (
+            <div
+              key={message.id}
+              className={`msg ${message.uid === auth.currentUser.uid ? 'sent' : 'received'}`}
+            >
+              {message.photoURL && <img src={message.photoURL} alt="User Avatar" />}
+              <p>{message.text}</p>
+            </div>
+          ))}
+          {/* Invisible div for smooth scrolling */}
+          <div ref={messagesEndRef} />
         </div>
+<<<<<<< Updated upstream
       ))}
       {/* Invisible div for smooth scrolling */}
       <div ref={messagesEndRef} />
@@ -48,8 +53,37 @@ function Chat() {
   
       <div> <button class="talk-ai-button"> Talk To Serenity AI</button></div>
   </>
+=======
+        <SendMessage auth={auth} />
+      </div>
+      <div className="small-box">
+>>>>>>> Stashed changes
 
-);
+        <div className="ai_chat">
+          <h1 className="chat-title dancing-script">Serenity Chat 🌿</h1> {/* Title with Dancing Script font */}
+          <SignOut />
+          <div className="messages">
+            {messages.map((message) => (
+              <div
+                key={message.id}
+                className={`msg ${message.uid === auth.currentUser.uid ? 'sent' : 'received'}`}
+              >
+                {message.photoURL && <img src={message.photoURL} alt="User Avatar" />}
+                <p>{message.text}</p>
+              </div>
+            ))}
+            {/* Invisible div for smooth scrolling */}
+            <div ref={messagesEndRef} />
+          </div>
+          <SendMessage auth={auth} />
+        </div>
+
+
+      </div>
+      <div> <button class="talk-ai-button"> Talk To Serenity AI</button></div>
+    </>
+
+  );
 }
 
 export default Chat;
