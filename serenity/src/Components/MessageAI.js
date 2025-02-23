@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function MessageAI() {
   const [msg, setMsg] = useState('');
-  const [messages, setMessages] = useState([{ id: 1, text: 'Hello! 🥰', sender: 'AI' }]);
+  const [messages, setMessages] = useState([{ id: 1, text: 'Hello! My name is Serenity 🥰. Please tell me your name', sender: 'AI' }]);
 
   const handleSendMessage = async (e) => {
     e.preventDefault();

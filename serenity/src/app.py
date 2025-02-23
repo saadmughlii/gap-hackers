@@ -44,7 +44,7 @@ def get_chatbot_response(user_input):
         ],
         temperature=0.7,  # Slightly reduced for more focused responses
         top_p=0.9,
-        max_tokens=150,  # Shorter responses
+        max_tokens=100,  # Shorter responses
         model=model_name
     )
 
