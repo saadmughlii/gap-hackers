@@ -217,7 +217,6 @@ p {
   left: 57%; /* Move it more to the right */
   width: 600px; /* Increase the width */
   height: 600px; /* Increase the height */
-  background-color: #00ffae; /* Change the color slightly */
   border-radius: 10px; /* More rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhance the shadow effect */
   z-index: 1000; /* Ensure it appears above other elements */
@@ -228,11 +227,7 @@ p {
 .talk-ai-button {
   position: fixed;
   top: 92.6%; /* Adjusted from 50% to 60% to move the button down */
-<<<<<<< Updated upstream
   left: 67%;
-=======
-  right: 19%;
->>>>>>> Stashed changes
   transform: translateY(-50%);
   padding: 30px 60px;
   background-color: #9375ff; /* Color, change as needed */
