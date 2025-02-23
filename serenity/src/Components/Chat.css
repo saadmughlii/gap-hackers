@@ -5,8 +5,8 @@
   max-width: 750px;
   height: 90vh;
   overflow: hidden;
-  background-color: #2d2d2d;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #008bb1;
+  box-shadow: 0 0 15px rgba(2, 2, 2, 0.2);
   
   /* Centering */
   position: absolute;
@@ -26,6 +26,25 @@
   font-style: normal;
   font-optical-sizing: auto;
 }
+
+.sacramento-regular {
+  font-family: "Sacramento", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chat-title-serenity {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0062ff;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 
 .chat-title {
   font-size: 2.8rem;
@@ -211,8 +230,10 @@ p {
   }
 }
 
+/* Small Box Container */
 .small-box {
   position: fixed;
+<<<<<<< Updated upstream
   top: 2%; /* Adjust the vertical position */
   left: 57%; /* Move it more to the right */
   width: 600px; /* Increase the width */
@@ -221,10 +242,33 @@ p {
   border-radius: 10px; /* More rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhance the shadow effect */
   z-index: 1000; /* Ensure it appears above other elements */
+=======
+  top: 2%;
+  left: 57%;
+  width: 600px;
+  height: 650px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 255, 204, 0.4);
+  background: rgba(0, 0, 0, 0.7); /* Slight transparency for a sleek effect */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Ensure no overflow */
+>>>>>>> Stashed changes
 }
 
+.ai-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure it fills the parent .small-box */
+  padding: 15px;
+}
 
+.ai-chat h1 {
+  text-align: center;
+  margin-bottom: 10px; /* Add some space between the title and messages */
+}
 
+<<<<<<< Updated upstream
 .talk-ai-button {
   position: fixed;
   top: 92.6%; /* Adjusted from 50% to 60% to move the button down */
@@ -236,20 +280,87 @@ p {
   transform: translateY(-50%);
   padding: 30px 60px;
   background-color: #9375ff; /* Color, change as needed */
+=======
+/* Centered Messages Container */
+.ai-chat-messages {
+  flex: 1; /* Take up available space */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  border-radius: 10px;
+  display: flex; /* Enable flexbox for centering */
+  flex-direction: column; /* Stack messages vertically */
+  align-items: flex-start; /* Align items to the left instead of center */
+}
+
+/* Individual Messages */
+.msg {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  border-radius: 25px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  max-width: 60%; /* Limit the width of messages */
+  padding: 12px 18px;
+}
+
+/* Sent & Received Messages */
+.sent,
+.received {
+  border-radius: 25px;
+}
+
+.sent {
+  background-color: #9000ff;
+>>>>>>> Stashed changes
   color: white;
-  border-radius: 50px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: large;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  align-self: flex-end; /* Keep sent messages to the right */
+  text-align: right;
+}
+
+.received {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  align-self: flex-start; /* Keep received messages to the left */
+}
+
+/* Input Form */
+.ai-chat-form {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd; /* Separate from messages */
+  background: #f8f9fa; /* Match chat background */
+}
+
+.ai-chat-form input {
+  flex: 1; /* Take available space */
+  padding: 12px;
   border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
 }
 
-.talk-ai-button:hover {
-  background-color: #0b1d6d; /* Darker color for hover */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+.ai-chat-form button {
+  margin-left: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  background: #17a2b8;
+  color: white;
+  cursor: pointer;
 }
 
+/* Custom Scrollbar Styles */
+.ai-chat-messages::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
 
+.ai-chat-messages::-webkit-scrollbar-track {
+  background: #eee; /* Background of the scrollbar track */
+}
 
-
+.ai-chat-messages::-webkit-scrollbar-thumb {
+  background: #17a2b8; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}

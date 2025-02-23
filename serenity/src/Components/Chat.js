@@ -6,6 +6,7 @@ import SendMessage from './SendMessage';
 import MessageAI from './MessageAI'; // Import your MessageAI component
 import './Chat.css'; // Import the CSS file
 
+
 function Chat() {
   const [messages, setMessages] = useState([]);
   const messagesEndRef = useRef(null); // Ref for smooth scrolling
@@ -28,6 +29,7 @@ function Chat() {
 
   return (
     <>
+<<<<<<< Updated upstream
   <div className="chat">
     <h1 className="chat-title dancing-script">Serenity Chat 🌿</h1> {/* Title with Dancing Script font */}
     <SignOut />
@@ -39,6 +41,23 @@ function Chat() {
         >
           {message.photoURL && <img src={message.photoURL} alt="User Avatar" />}
           <p>{message.text}</p> 
+=======
+      <div className="chat">
+        <h1 className="chat-title dancing-script">Chat 🌿</h1> {/* Title with Dancing Script font */}
+        <SignOut />
+        <div className="messages">
+          {messages.map((message) => (
+            <div
+              key={message.id}
+              className={`msg ${message.uid === auth.currentUser.uid ? 'sent' : 'received'}`}
+            >
+              {message.photoURL && <img src={message.photoURL} alt="User Avatar" />}
+              <p>{message.text}</p>
+            </div>
+          ))}
+          {/* Invisible div for smooth scrolling */}
+          <div ref={messagesEndRef} />
+>>>>>>> Stashed changes
         </div>
 <<<<<<< Updated upstream
       ))}
@@ -58,15 +77,14 @@ function Chat() {
       
       {/* AI Chat Component */}
       <div className="small-box">
-        <div className="ai_chat">
-          <h1 className="chat-title dancing-script">Serenity AI 🌿</h1> {/* Title with Dancing Script font */}
-          <MessageAI /> {/* This is your MessageAI component */}
-        </div>
-      </div>
+  <div className="ai-chat">
+    <h1 className="chat-title-serenity sacramento-regular">Talk with Serenity</h1>
+    <div className="ai-chat-messages">
+      <MessageAI /> {/* Ensure this component properly renders messages */}
+    </div>
+  </div>
+</div>
 
-      <div> 
-        <button className="talk-ai-button"> Talk To Serenity AI</button>
-      </div>
     </>
   );
 >>>>>>> Stashed changes
