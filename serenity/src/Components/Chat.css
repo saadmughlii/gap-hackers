@@ -235,6 +235,7 @@ p {
   position: fixed;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   top: 2%; /* Adjust the vertical position */
   left: 57%; /* Move it more to the right */
   width: 600px; /* Increase the width */
@@ -244,6 +245,8 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhance the shadow effect */
   z-index: 1000; /* Ensure it appears above other elements */
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   top: 2%;
@@ -257,6 +260,9 @@ p {
   flex-direction: column;
   overflow: hidden; /* Ensure no overflow */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -276,6 +282,7 @@ p {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .talk-ai-button {
   position: fixed;
   top: 92.6%; /* Adjusted from 50% to 60% to move the button down */
@@ -288,6 +295,8 @@ p {
   padding: 30px 60px;
   background-color: #9375ff; /* Color, change as needed */
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 /* Centered Messages Container */
@@ -321,6 +330,9 @@ p {
 .sent {
   background-color: #9000ff;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
