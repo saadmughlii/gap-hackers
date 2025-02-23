@@ -22,7 +22,21 @@ body {
   background: linear-gradient(to right, #008bb1, #9000ff);
   height: 100vh; /* Ensures it covers the whole viewport */
   margin: 0; /* Removes default margins */
+  position: relative;
 }
+
+body::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* Adjust curve size */
+  background: linear-gradient(to right, #9000ff, #008bb1); /* Adjust to match your design */
+  clip-path: ellipse(50% 100% at 50% 100%);
+  z-index: -1000;
+}
+
 
 
 
