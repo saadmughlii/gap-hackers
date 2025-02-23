@@ -1,0 +1,139 @@
+/* App.css */
+
+/* General styles for the entire application */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f5f7fa; /* Light gray background */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Chat-specific styles */
+  .chat {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ff4b99; /* Light background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  }
+  
+  .chat-title {
+    font-size: 2.5rem; /* Adjust the font size */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Add some space below the title */
+    color: #ffffff; /* Change the color to match your theme */
+  }
+  
+  .messages {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    padding-bottom: 70px; /* Add padding to prevent overlap with the SendMessage component */
+  }
+  
+  .msg {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 50%; /* Adjusted width for narrower bubbles */
+    padding: 10px 15px; /* Add padding for a comfortable touch */
+  }
+  
+  .sent {
+    background-color: #a600ff; /* Messenger blue for sent messages */
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; /* Rounded corners */
+    align-self: flex-end;
+    text-align: right;
+  }
+  
+  .received {
+    background-color: #ffffff; /* White for received messages */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; /* Rounded corners */
+    align-self: flex-start;
+  }
+  
+  /* Styles for the send message input area */
+  .send-message {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-top: 1px solid #ccc;
+    background-color: #f5f7fa; /* Background for the input area */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  .styled-input {
+    flex: 1;
+    margin-right: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .styled-button {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .styled-button:hover {
+    background-color: #3700b3;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Sign Out Button Styles */
+  .sign-out-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #ff4b99;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .sign-out-button:hover {
+    background-color: #ff4b99;
+    color: white;
+  }
+  
+  /* Responsive breakpoints (optional) */
+  @media (max-width: 775px) {
+    .msg {
+      max-width: 80%; /* Adjusted width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .msg {
+      max-width: 100%; /* Full width for very small screens */
+    }
+  }
+  

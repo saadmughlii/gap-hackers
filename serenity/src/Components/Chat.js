@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { db, collection, query, orderBy, limit, onSnapshot } from '../firebase.js';
 import { auth } from '../firebase.js';
 import SignOut from './SignOut';
@@ -7,6 +7,7 @@ import './Chat.css'; // Import the CSS file
 
 function Chat() {
   const [messages, setMessages] = useState([]);
+  const messagesEndRef = useRef(null); // Ref for smooth scrolling
 
   useEffect(() => {
     const messagesRef = collection(db, "messages");
@@ -18,6 +19,11 @@ function Chat() {
 
     return () => unsubscribe();
   }, []);
+
+  useEffect(() => {
+    // Scroll to bottom when messages update
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
 
   return (
     <div className="chat">
@@ -33,6 +39,8 @@ function Chat() {
             <p>{message.text}</p> 
           </div>
         ))}
+        {/* Invisible div for smooth scrolling */}
+        <div ref={messagesEndRef} />
       </div>
       <SendMessage auth={auth} />
     </div>
