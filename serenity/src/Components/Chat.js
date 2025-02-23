@@ -43,9 +43,9 @@ function Chat() {
       {/* Invisible div for smooth scrolling */}
       <div ref={messagesEndRef} />
     </div>
-    <SendMessage auth={auth} />      
+    <SendMessage auth={auth} />  
   </div>
-  
+      <div className="small-box" />
       <div> <button class="talk-ai-button"> Talk To Serenity AI</button></div>
   </>
 

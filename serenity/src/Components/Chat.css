@@ -211,14 +211,27 @@ p {
   }
 }
 
+.small-box {
+  position: fixed;
+  top: 2%; /* Adjust the vertical position */
+  left: 57%; /* Move it more to the right */
+  width: 600px; /* Increase the width */
+  height: 600px; /* Increase the height */
+  background-color: #00ffae; /* Change the color slightly */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhance the shadow effect */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+
 
 .talk-ai-button {
   position: fixed;
-  top: 50%;
-  right: 25%;
+  top: 92.6%; /* Adjusted from 50% to 60% to move the button down */
+  left: 67%;
   transform: translateY(-50%);
   padding: 30px 60px;
-  background-color: #9375ff; /* Green color, change as needed */
+  background-color: #9375ff; /* Color, change as needed */
   color: white;
   border-radius: 50px;
   font-weight: bold;
@@ -229,6 +242,10 @@ p {
 }
 
 .talk-ai-button:hover {
-  background-color: #0b1d6d; /* Darker green for hover */
+  background-color: #0b1d6d; /* Darker color for hover */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
+
+
+
