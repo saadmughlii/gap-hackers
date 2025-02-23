@@ -3,6 +3,7 @@ import { db, collection, query, orderBy, limit, onSnapshot } from '../firebase.j
 import { auth } from '../firebase.js';
 import SignOut from './SignOut';
 import SendMessage from './SendMessage';
+import MessageAI from './MessageAI'; // Import your MessageAI component
 import './Chat.css'; // Import the CSS file
 
 function Chat() {
@@ -39,6 +40,7 @@ function Chat() {
           {message.photoURL && <img src={message.photoURL} alt="User Avatar" />}
           <p>{message.text}</p> 
         </div>
+<<<<<<< Updated upstream
       ))}
       {/* Invisible div for smooth scrolling */}
       <div ref={messagesEndRef} />
@@ -50,6 +52,24 @@ function Chat() {
   </>
 
 );
+=======
+        <SendMessage auth={auth} />
+      </div>
+      
+      {/* AI Chat Component */}
+      <div className="small-box">
+        <div className="ai_chat">
+          <h1 className="chat-title dancing-script">Serenity AI 🌿</h1> {/* Title with Dancing Script font */}
+          <MessageAI /> {/* This is your MessageAI component */}
+        </div>
+      </div>
+
+      <div> 
+        <button className="talk-ai-button"> Talk To Serenity AI</button>
+      </div>
+    </>
+  );
+>>>>>>> Stashed changes
 }
 
 export default Chat;
